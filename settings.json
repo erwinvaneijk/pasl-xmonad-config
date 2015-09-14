@@ -1,0 +1,39 @@
+{
+    "vars"     : {
+        "dpi"      : 96,
+        "font-size": 8,
+        "font-name": "Pragmata Pro",
+        "browser"  : "chromium"
+    },
+    "dpi"      : "$dpi",
+    "font-size": "$font-size",
+    "font-name": "$font-name",
+    "host-name": "$host-name",
+    "browser"  : "$browser",
+    "dmenu"    : ["-fn" , "$dmenu-font", "-b",
+                  "-l"  , "15",
+                  "-nb" , "$color-black",
+                  "-nf" , "$color-white",
+                  "-sb" , "$color-green-light",
+                  "-sf" , "$color-black",
+                  "-o"  , "0.95",
+                  "-dim", "0.25"
+                 ],
+    "class-to-name" : {
+        "crx_nckgahadagoaajjgafhacjanaoiihapd" : "hangouts",
+        "crx_knipolnnllmklapflnccelgolnpehhpl" : "hangouts",
+        "gnome-terminal-server"                : "gnome-terminal",
+        "Chromium"                             : "chrome"
+    },
+    "widgets" : {
+        "widgets": ["ibus", "perf", "weather", "gmail", "volume", "battery"],
+        "configs": {
+            "weather": {"location": "Moscow, RU"},
+            "ibus"   : {"engines" : [["xkb:us::eng"     , "EN"],
+                                     ["m17n:ru:translit", "RU"]]
+                       },
+            "gmail"  : {"login": "username",
+                        "pass":  "password"}
+        }
+    }
+}
